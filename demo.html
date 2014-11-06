@@ -1,0 +1,30 @@
+<!doctype html>
+<title>console</title>
+<script src="console.js"></script>
+<script>
+console.info('Welcome to the console.');
+console.log(['THE CONSOLE', 4, 'EVERYONE']);
+console.warn('Does it work in IE6?');
+console.error('Inconceivable!');
+
+console.table([{
+	action: 'Toggle visibility',
+	command: 'CTRL + SHIFT + I'
+}, {
+	action: 'Use last comand',
+	command: 'UP ARROW'
+}, {
+	action: 'Use next command',
+	command: 'DOWN ARROW'
+}]);
+
+console.log({ and: 'to thine own self', be: true });
+</script>
+
+<h1>console</h1>
+
+<p>
+	<a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='//rawgit.com/jonathantneal/console/master/console.min.js'})();">Console</a>
+</p>
+
+<p>Toggle console visibility with <code>CTRL + SHIFT + I</code>.</p>
