@@ -261,6 +261,8 @@
 		var
 		pre = element_append(frame.output, ['pre', ['type-console', value]]);
 
+		pre.runtimeStyle.borderBottomColor = '#FFF';
+
 		element_append(pre, ['console-badge']).runtimeStyle.backgroundPosition = '20px 0px';
 
 		try {
@@ -576,8 +578,9 @@
 			},
 			style: {
 				backgroundColor: '#E6E6E6',
+				color: '#676767',
 				cursor: 'pointer',
-				font: '700 18px/22px monospace, monospace',
+				font: '700 18px/22px monospace',
 				position: 'absolute',
 				right: 0,
 				textAlign: 'center',
@@ -589,11 +592,11 @@
 			style: {
 				background: 'url(//i.imgur.com/KrXVuLo.png)',
 				display: 'block',
-				left: '-16px',
+				left: '-17px',
 				fontSize: '0',
 				height: '10px',
 				position: 'absolute',
-				top: '6px',
+				top: '3px',
 				width: '10px',
 				zoom: 1
 			}
@@ -620,8 +623,9 @@
 			},
 			style: {
 				margin: 0,
+				padding: '2px 0 0',
 				overflowX: 'hidden',
-				overflowY: 'scroll'
+				overflowY: 'auto'
 			}
 		},
 		input: {
@@ -680,8 +684,7 @@
 				color: '#303942',
 				cursor: 'default',
 				display: 'block',
-				font: '12px/20px "Courier New", monospace',
-				height: '20px',
+				font: '12px/15px monospace',
 				padding: 0,
 				position: 'relative',
 				top: '-1px',
@@ -692,7 +695,7 @@
 			style: {
 				borderBottom: '1px solid #EEE',
 				color: '#303942',
-				font: '12px/20px "Courier New", monospace',
+				font: '12px/15px monospace',
 				margin: 0,
 				padding: 0,
 				position: 'relative',
@@ -704,7 +707,7 @@
 				display: 'block',
 				margin: 0,
 				overflow: 'hidden',
-				padding: '0 20px',
+				padding: '0 22px',
 				position: 'relative'
 			}
 		},
@@ -713,7 +716,7 @@
 				border: '1px solid #AAA',
 				borderCollapse: 'collapse',
 				color: '#303942',
-				font: '12px/20px "Courier New", monospace',
+				font: '12px/15px monospace',
 				width: '100%'
 			}
 		},
